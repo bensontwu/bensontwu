@@ -1,31 +1,33 @@
 body 
 {
 	background-color: #f2f2f2;
+	font-family: verdana;
+	color: #333;
 }
 
 h1 {
-	font-family: helvetica;
 	text-align: center;
 }
 
 h2 {
-	font-family: helvetica;
 	text-align: center;
 }
 
 h3 {
-	font-family: helvetica;
 	color: #f2f2f2;
 	text-align: center;
 	background-color: #333;
 }
 
-.column {
-	margin: 10px;
-	background-color: white;
+h4 {
+	color: orange;
 }
 
-.column.navbar {
+.column {
+	margin: 10px;
+}
+
+.column.leftfloat {
 	position: -webkit-sticky;
  	position: sticky;
  	display: block;
@@ -34,33 +36,68 @@ h3 {
  	float: left;
 }
 
-.column.navbar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 300px;
+.navbar {
+	background-color: white;
+	margin-bottom: 30px;
 }
 
-.column.navbar li a {
+.navbar ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.navbar li a {
 	display: block;
 	color: black;
 	padding: 10px 16px;
 	text-decoration: none;
 }
 
-.column.navbar a:hover {
+.navbar a:hover {
 	background-color: #ddd;
 	color: black;
 }
 
-.heading {
+.connect ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.connect li a {
+	display: block;
+	color: orange;
+	padding: 10px 16px;
+	text-decoration: none;
+	float: left;
+}
+
+.connect {
+	background-color: white;
+}
+
+.connect a:hover {
+	background-color: #FFdb99;
+}
+
+.navbar-heading {
 	display: block;
 	padding: 10px;
 	background-color: #333;
 }
 
 .column.middle {
+	background-color: white;
 	width: 800px;
 	padding: 10px;
 	float: left;
+}
+
+.project {
+	border-top-style: solid;
+	border-top-color: #777;
+	border-top-width: 1px;
+	margin: 50px;
+	font-family: monaco;
 }
