@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Benson Wu</title>
+    <link rel="stylesheet" type="text/css" href="stylez.css">
+</head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+	body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+
+	h1 {
+		color: white;
+		font-size: 50pt;
+	}
+
+	h2 {
+		color: #bbb;
+		font-size: 30pt;
+	}
+
+	body, html {
+	  height: 100%;
+	  width: 100%;
+	  color: #777;
+	  line-height: 1.8;
+	}
+
+	.bgimg1 {
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.bgimg1 {
+		background-image: url('background.jpg');
+		min-height: 100%;
+		max-height: 100%;
+		max-width: 100%;
+		min-width: 100%;
+	}
+
+</style>
+
+<body>
+	<!-- First Parallax Image with Logo Text -->
+	<div class="bgimg1 w3-display-container" id="home">
+		<div class="w3-display-middle">
+			<h1>Hello, I am Benson Wu</h1>
+			<center><h2>I am a software developer</h2></center>
+		</div>
+	</div>
+
+	<!-- Nav Bar -->
+	<div class="w3-center">
+		<div class="w3-bar" id="myNavbar">
+		    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+		      <i class="fa fa-bars"></i>
+		    </a>
+		    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+		    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+		    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+		    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+		</div>
+	</div>
+
+	<div class="w3-content w3-container w3-padding-64" id="about">
+		<h3 class="w3-center">ABOUT ME</h3>
+		<p class="w3-center"><em>I love solving problems</em></p>
+		<p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+		qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	</div>
+</body>
+
+</html>
