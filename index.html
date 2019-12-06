@@ -73,7 +73,7 @@
 		position: relative;
 		background-color: #eee;
 		margin: 0 0 12px 0;
-		align-items: flex-end;
+		/*align-items: flex-end;*/
 		font-size: 7pt;
 	}
 
@@ -84,6 +84,13 @@
 		background-color: grey;
 		padding: 0;
 		opacity: 1;
+	}
+	
+	.bar span {
+		display: initial;
+		z-index: 1;
+		padding: 0 15px 0 0;
+		align-self: flex-end;
 	}
 
 	.bar .tag {
@@ -105,14 +112,47 @@
 		align-items: center;
 	}
 
-	.bars.flex {
+	.bars-wrapper {
 		display: block;
+		float: right;
+		width: 70%;
 	}
 
 	/* IDS */
 	#about {
 		margin-bottom: 25;
 	}
+
+	.prof-pic {
+		float: left;
+	}
+
+	.projects-grid {
+		display: grid;
+  		grid-template-columns: auto auto;
+	}
+
+	.grid-item {
+		border: 1px solid rgba(0, 0, 0, 0.8);
+		text-align: center;
+	}
+
+	.grid-item img {
+		max-width: 30%;
+	}
+
+	.proj-pic {
+		float: left;
+		width: 50%;
+		height: 90%;
+	}
+
+	.proj-desc {
+		float: right;
+		width: 50%;
+		height: 90%;
+	}
+
 
 </style>
 
@@ -143,11 +183,14 @@
 			<h3 class="w3-center">ABOUT ME</h3>
 			<hr>
 			<br>
-			<p>I am a computer science student at UC Irvine and an iOS developer at the Student Center & Event Services. When I am not coding or running my haircutting business you can find me relaxing at home, at the gym, or getting some work done at a coffee shop. I love music and podcasts, and I am currently listening to the Art of Manliness podcast.</p>
+			<p>I am a computer science student at UC Irvine and an iOS developer at the UCI Student Center. You can find me relaxing at home, at the gym, or getting some work done at Dunkin'. I love music and podcasts, and I'm currently listening to the Art of Manliness podcast.</p>
 		</div>
 	</div>
-	<div class="w3-content w3-container w3-padding-64">
-		<div class="bars flex">
+	<div class="w3-content w3-container w3-padding-64" id="profile">
+		<div class="prof-pic">
+			<img src="profile.jpg" width="200">
+		</div>
+		<div class="flex bars-wrapper">
 			<div class="bar flex">
             	<div class="bar fill" style="width:80%">
 					<div class="tag bold flex">Swift</div>
@@ -171,6 +214,31 @@
 					<div class="tag bold flex">Python</div>
 				</div>
 				<span>75%</span>
+			</div>
+		</div>
+	</div>
+	<div class="w3-content w3-container w3-padding-64" id="portfolio">
+		<h3 class="w3-center">PROJECTS</h3>
+		<hr>
+		<br>
+		<div class="projects-grid">
+			<div class="grid-item">
+				<div class="proj-pic">
+					<img src="iVital-demo.gif">
+				</div>
+				<div class="proj-desc">
+					<p>Description of iVital</p>
+				</div>
+				<a href="https://github.com/bensontwu/iVital">Github</a>
+			</div>
+			<div class="grid-item">
+				<div class="proj-pic">
+					<img src="iVital-demo.gif">
+				</div>
+				<div class="proj-desc">
+					<p>Description of Liftify</p>
+				</div>
+				<a href="https://github.com/bensontwu/liftify">Github</a>
 			</div>
 		</div>
 	</div>
