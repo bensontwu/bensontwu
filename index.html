@@ -62,7 +62,7 @@
 	}
 
 	.bgimg1 {
-		background-image: url('background.jpg');
+		background-image: url('assets/background.jpg');
 		min-height: 100%;
 		min-width: 100%;
 	}
@@ -132,13 +132,24 @@
   		grid-template-columns: auto auto;
 	}
 
+	.contacts-grid {
+		display: grid;
+		grid-template-columns: auto auto auto;
+	}
+
 	.grid-item {
-		border: 1px solid rgba(0, 0, 0, 0.8);
+		padding: 25px 25px 25px 25px;
+		margin: 25px 25px 25px 25px;
+		border-radius: 10px;
 		text-align: center;
 	}
 
+	.pink {
+		background-color: #FFBAAF;
+	}
+
 	.grid-item img {
-		max-width: 30%;
+		max-width: 40%;
 	}
 
 	.proj-pic {
@@ -183,12 +194,12 @@
 			<h3 class="w3-center">ABOUT ME</h3>
 			<hr>
 			<br>
-			<p>I am a computer science student at UC Irvine and an iOS developer at the UCI Student Center. You can find me relaxing at home, at the gym, or getting some work done at Dunkin'. I love music and podcasts, and I'm currently listening to the Art of Manliness podcast.</p>
+			<p>Computer science student at UC Irvine and an iOS developer at the UCI Student Center & Event Services. When I'm not at work or in class, I'm always at Dunkin' Donuts, at the gym, or relaxing at home. I love iOS development. I love to cut hair. Music gets me through the day and I love podcasts.</p>
 		</div>
 	</div>
 	<div class="w3-content w3-container w3-padding-64" id="profile">
 		<div class="prof-pic">
-			<img src="profile.jpg" width="200">
+			<img src="assets/profile.jpg" width="200">
 		</div>
 		<div class="flex bars-wrapper">
 			<div class="bar flex">
@@ -198,16 +209,16 @@
 				<span>80%</span>
 			</div>
 			<div class="bar flex">
-            	<div class="bar fill" style="width:70%">
+            	<div class="bar fill" style="width:65%">
 					<div class="tag bold flex">C++</div>
 				</div>
-				<span>70%</span>
+				<span>60%</span>
 			</div>
 			<div class="bar flex">
-            	<div class="bar fill" style="width:55%">
-					<div class="tag bold flex">Javascript</div>
+            	<div class="bar fill" style="width:80%">
+					<div class="tag bold flex">iOS</div>
 				</div>
-				<span>55%</span>
+				<span>80%</span>
 			</div>
 			<div class="bar flex">
             	<div class="bar fill" style="width:75%">
@@ -215,31 +226,70 @@
 				</div>
 				<span>75%</span>
 			</div>
+			<div class="bar flex">
+            	<div class="bar fill" style="width:65%">
+					<div class="tag bold flex">Java</div>
+				</div>
+				<span>65%</span>
+			</div>
 		</div>
 	</div>
-	<div class="w3-content w3-container w3-padding-64" id="portfolio">
-		<h3 class="w3-center">PROJECTS</h3>
-		<hr>
-		<br>
-		<div class="projects-grid">
-			<div class="grid-item">
-				<div class="proj-pic">
-					<img src="iVital-demo.gif">
+	<div id="portfolio">
+		<div class="w3-content w3-container w3-padding-64">
+			<h3 class="w3-center">WORK</h3>
+			<hr>
+			<br>
+			<div class="projects-grid">
+				<div class="grid-item">
+					<div class="proj-pic">
+						<img src="assets/uci-now-csl.jpg">
+					</div>
+					<div class="proj-desc">
+						<h3>UCI Now</h3>
+						<p>One of the three applications I work on for the school. Shown is the CSL feature of the app, which lets students book study rooms: I implemented most of the front-end using custom View Controllers and Storyboard.</p>
+					</div>
+					<a href="https://apps.apple.com/us/app/uci-now/id1382415698">App Store</a>
 				</div>
-				<div class="proj-desc">
-					<p>Description of iVital</p>
-				</div>
-				<a href="https://github.com/bensontwu/iVital">Github</a>
 			</div>
-			<div class="grid-item">
-				<div class="proj-pic">
-					<img src="iVital-demo.gif">
+		</div>
+		<div class="w3-content w3-container w3-padding-64">
+			<h3 class="w3-center">PROJECTS</h3>
+			<hr>
+			<br>
+			<div class="projects-grid">
+				<div class="grid-item">
+					<div class="proj-pic">
+						<img src="assets/iVital-demo.gif">
+					</div>
+					<div class="proj-desc">
+						<h3>iVital</h3>
+						<p>My first (and only) personal app! It's essentially just a mockup for a potential application.</p>
+					</div>
+					<a href="https://github.com/bensontwu/iVital">Github</a>
 				</div>
-				<div class="proj-desc">
-					<p>Description of Liftify</p>
-				</div>
-				<a href="https://github.com/bensontwu/liftify">Github</a>
 			</div>
+		</div>
+	</div>
+	<div id="contact">
+		<div class="w3-content w3-container w3-padding-64">
+			<h3 class="w3-center">CONTACT</h3>
+			<hr>
+			<br>
+			<div class="contacts-grid">
+				<div class="grid-item pink">
+					<h3>Email</h3>
+					<a href="mailto:bensontwu@gmail.com">bensontwu@gmail.com</a>
+				</div>
+				<div class="grid-item pink">
+					<h3>LinkedIn</h3>
+					<a href="linkedin.com/in/bensontwu">linkedin.com/in/bensontwu</a>
+				</div>
+				<div class="grid-item pink">
+					<h3>Github</h3>
+					<a href="github.com/bensontwu">github.com/bensontwu</a>
+				</div>
+			</div>
+
 		</div>
 	</div>
 </body>
