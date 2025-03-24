@@ -1,4 +1,4 @@
-Associate Cloud Application Architect @ AWS
+Cloud Application Architect @ AWS
 
 <!---
 bensontwu/bensontwu is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
